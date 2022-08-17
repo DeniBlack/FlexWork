@@ -1,0 +1,243 @@
+@import "nullstyle.scss";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.conteiner {
+    max-width: 1180px;
+    margin: 0px auto;
+}
+.content {
+    flex: 1 1 auto;
+}
+.hi {
+    background-color: #445162;
+    padding: 50px 0px;
+		&__row {
+            display: flex;
+            justify-content: space-between;
+		}
+
+		&__body {
+            color: #fff;
+            padding: 0px 20px 0px 0px;
+		}
+
+		&__title {
+            text-shadow: 1px 1px 0 rgba(0 , 0 , 0 , 0.3);
+            font-size: 60px;
+            margin: 0px 0px 38px 0px;
+		}
+
+		&__list li {
+            background:url(/FlexWork/img/icons/icon.png) 0 1px no-repeat;
+            text-shadow: 1px 1px 0 rgba(0 , 0 , 0 , 0.3);
+            font-size: 20px;
+            padding: 0px 0px 0px 36px;
+            margin: 0px 0px 15px 0px;
+		}
+
+        &__list li:last-child{
+            margin: 0;
+        }
+
+        &__list {
+            
+		}
+
+		&__img {
+		}
+}
+
+.title {
+    color: #445162;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.what {
+    padding: 50px 0px;
+    
+    &__row {
+        display: flex;
+    }
+
+    &__image {
+        flex: 0 0 430px;
+    }
+    &__image img {
+        max-width: 100%;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 38px;
+    }
+
+    &__title {
+        margin: 0px 0px 33px 0px;
+    }
+
+    &__text {
+    }
+
+    &__text p{
+        margin: 0px 0px 25px 0px;
+        color: #333333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.columns {
+    background-color: #f5f5f5;
+    padding: 50px 0px 20px 0px;
+    &__title {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px -8px;
+    }
+
+    &__column {
+        padding: 0px 8px;
+        flex: 0 1 50%;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__item {
+    }
+}
+
+.item {
+
+    &__row {
+        display: flex;
+    }
+
+    &__image {
+        flex: 0 0 200px;
+    }
+
+    &__body {
+        flex: 1 1 auto;
+        padding: 0px 0px 0px 15px;
+    }
+
+    &__title {
+        color: #445162;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 13px;
+    }
+
+    &__text {
+        color: #333333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.vertical {
+    padding: 50px 0px;
+
+    &__title {
+        text-align: center;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__body {
+        max-width: 990px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0px -22.5px;
+    }
+
+    &__column {
+        flex: 0 1 33.333%;
+        padding: 0px 22.5px;
+        display: flex;
+    }
+
+    &__item {
+        background-color: #445162;
+        color: #fff;
+        border-radius: 5px;
+        border: 1px solid #445162;
+        padding: 0px 0px 20px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12px 0px;
+    }
+
+    &__label {
+        background-color: #fff;
+        text-align: center;
+        color: #445162;
+        padding: 15px 0px;
+        font-size: 40px;
+    }
+
+    &__text {
+        padding: 20px;
+        font-size: 14px;
+        line-height: 24px;
+        flex: 1 1 auto;
+    }
+
+    &__text p{
+        margin: 0px 0px 15px 0px;
+    }
+
+    &__text p:last-child{
+        margin: 0px;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0px 20px;
+        height: 40px;
+        line-height: 40px;
+        text-align:center;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #445161;
+        background-color: #ffffff;
+        
+    }
+}
+
+.footer {
+    background-color: #f5f5f5;
+		&__row {
+            display: flex;
+            height: 65px;
+            justify-content: center;
+            align-items: center;
+		}
+
+		&__text {
+            color: #445162;
+            font-size: 12px;
+            letter-spacing: 0.3px;
+		}
+}
